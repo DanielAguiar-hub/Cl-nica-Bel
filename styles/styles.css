@@ -1,106 +1,145 @@
+:root {
+    /* Variáveis do Design System */
+    --primary-cyan: #0E7490;
+    --accent-emerald: #059669;
+    --accent-hover: #047857;
+    --bg-light: #FAFAFA;
+    --bg-card: #FFFFFF;
+    --text-dark: #1E293B;
+    --text-muted: #64748B;
+    --border-color: #E2E8F0;
+}
 
-
-
-
-.lista_menu{
+.lista_menu {
     display: flex;
     justify-content: flex-start;
     align-items: center;
-
 }
-.lista_titulo{
+
+.lista_titulo {
     display: flex;
     font-size: 32px;
-    font-weight: 700px;
+    font-weight: 700; /* Correção: removido 'px' */
     display: inline-block;
     margin: 0 0 0 90px;
 }
-.lista_navegacao{
+
+.lista_navegacao {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
     font-size: 18px;
-    font-weight: 500px;
+    font-weight: 500; /* Correção: removido 'px' */
     width: 100%;
     margin: 4% 16%;
-
 }
 
-.item_lista{
+.item_lista {
     text-decoration: none;
     color: black;
-    
     padding: 0 30px;
+    display: inline-block; /* Correção: elemento inline com padding agora cresce corretamente */
 }
-.item_lista_botao{
-    background-color: #007BFF;
+
+.item_lista_botao {
+    background-color: var(--primary-cyan); /* Aplicação da variável */
     color: white;
     padding: 10px 20px;
     border-radius: 5px;
+    display: inline-flex; /* Correção: inline-flex alinha o texto e o ícone SVG */
+    align-items: center;
+    gap: 8px;
 }
-.espaco_principal{
+
+/* Padrão para ícones nos botões */
+.item_lista_botao svg {
+    width: 18px;
+    height: 18px;
+    stroke: currentColor;
+}
+
+.espaco_principal {
     display: grid;
     grid-template-columns: 50% 50%;
-
 }
+
 html, body {
     width: 100%;
     min-height: 100vh;
+    background-color: var(--bg-light); /* Aplicação da variável */
+    color: var(--text-dark); /* Aplicação da variável */
 }
-.espaco_principal_titulo{
+
+.espaco_principal_titulo {
     font-size: 100px;
     margin: 60px 15px 20px 30px;
+    color: var(--accent-hover);
 }
-.espaco_principal_subtitulo{
+
+.espaco_principal_subtitulo {
     font-size: 32px;
     margin: 8px 0 15px 30px;
 }
-.espaco_principal_texto{
+
+.espaco_principal_texto {
     font-size: 16px;
-    margin: 8px 0 15px 30px;;
+    margin: 8px 0 15px 30px;
 }
-.espaco_principal_lista_botoes{
+
+.espaco_principal_lista_botoes {
     display: flex;
     justify-content: center;
-    padding: 30px;
+    padding: 30px 30px 0px 0px;
 }
-.espaco_principal_lista_botoes_1{
+
+.espaco_principal_lista_botoes_1 {
     margin: 30px;
     color: rgb(255, 255, 255);
     padding: 8px;
-    background-color: green;
+    background-color: var(--primary-cyan); /* Aplicação da variável */
     border-radius: 5px;
-
+    display: inline-block; /* Correção: elemento inline com margin/padding agora cresce corretamente */
 }
-.espaco_principal_lista_botoes_2{
+
+.espaco_principal_lista_botoes_2 {
     margin: 30px;
-    color: green;
+    color: var(--accent-emerald); /* Aplicação da variável */
     padding: 8px;
     background-color: transparent;
-    border: 3px solid green;
+    border: 3px solid var(--accent-emerald); /* Aplicação da variável */
     border-radius: 5px;
+    display: inline-block; /* Correção: elemento inline com margin/padding agora cresce corretamente */
 }
-.espaco_principal_lista_botoes_geral{
+
+.espaco_principal_lista_botoes_geral {
     font-size: 20px;
     font-weight: 700;
     text-decoration: none;
 }
-.espaco_secundario{
+
+.espaco_secundario {
     margin: 18px;
 }
-.espaco_secundario_lista{
+
+.espaco_secundario_lista {
     display: flex;
-    
     justify-content: space-around;
 }
-.espaco_secundario_item_lista{
+
+.espaco_secundario_item_lista {
     padding: 20px;
 }
-.espaco_secundario_item_lista_titulo{
+
+.espaco_secundario_item_lista_titulo {
     font-size: 22px;
     font-weight: 700;
+    margin-bottom: 11pxgi;
 }
-.learn_more{
+
+.learn_more {
     margin-top: 20px;
     text-decoration: none;
+    display: inline-block; /* Correção: elemento inline com margin agora cresce corretamente */
+    color: var(--primary-cyan);
+
 }
