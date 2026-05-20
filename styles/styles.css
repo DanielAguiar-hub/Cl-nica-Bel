@@ -1,0 +1,106 @@
+
+
+
+
+.lista_menu{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+
+}
+.lista_titulo{
+    display: flex;
+    font-size: 32px;
+    font-weight: 700px;
+    display: inline-block;
+    margin: 0 0 0 90px;
+}
+.lista_navegacao{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    font-size: 18px;
+    font-weight: 500px;
+    width: 100%;
+    margin: 4% 16%;
+
+}
+
+.item_lista{
+    text-decoration: none;
+    color: black;
+    
+    padding: 0 30px;
+}
+.item_lista_botao{
+    background-color: #007BFF;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+.espaco_principal{
+    display: grid;
+    grid-template-columns: 50% 50%;
+
+}
+html, body {
+    width: 100%;
+    min-height: 100vh;
+}
+.espaco_principal_titulo{
+    font-size: 100px;
+    margin: 60px 15px 20px 30px;
+}
+.espaco_principal_subtitulo{
+    font-size: 32px;
+    margin: 8px 0 15px 30px;
+}
+.espaco_principal_texto{
+    font-size: 16px;
+    margin: 8px 0 15px 30px;;
+}
+.espaco_principal_lista_botoes{
+    display: flex;
+    justify-content: center;
+    padding: 30px;
+}
+.espaco_principal_lista_botoes_1{
+    margin: 30px;
+    color: rgb(255, 255, 255);
+    padding: 8px;
+    background-color: green;
+    border-radius: 5px;
+
+}
+.espaco_principal_lista_botoes_2{
+    margin: 30px;
+    color: green;
+    padding: 8px;
+    background-color: transparent;
+    border: 3px solid green;
+    border-radius: 5px;
+}
+.espaco_principal_lista_botoes_geral{
+    font-size: 20px;
+    font-weight: 700;
+    text-decoration: none;
+}
+.espaco_secundario{
+    margin: 18px;
+}
+.espaco_secundario_lista{
+    display: flex;
+    
+    justify-content: space-around;
+}
+.espaco_secundario_item_lista{
+    padding: 20px;
+}
+.espaco_secundario_item_lista_titulo{
+    font-size: 22px;
+    font-weight: 700;
+}
+.learn_more{
+    margin-top: 20px;
+    text-decoration: none;
+}
